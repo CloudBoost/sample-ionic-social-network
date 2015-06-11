@@ -1,1 +1,34 @@
 /* Empty. Add your own CSS if you like */
+.flex-general-row-wrapper{
+   /* Flex row rules */
+    display: flex;
+    display:-webkit-flex;
+    display:-moz-flex;    
+    
+    flex-flow:row wrap;
+    -moz-flex-flow:row wrap;
+    -webkit-flex-flow:row wrap;
+
+    justify-content:flex-start;
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+
+    align-items:flex-start;  
+    -moz-align-items: flex-start;  
+    -webkit-align-items:flex-start;     
+}
+
+.postInput{	
+	width:97%;
+}
+
+.postBtn{
+	visibility: hidden;
+	float: right;
+}
+
+.input-div{
+	padding:4px;
+	border:1px solid #F1F1F1;
+	border-radius: 2px;
+}

@@ -1,7 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope,$rootScope) {
-  
+.controller('DashCtrl', function($scope,$rootScope) { 
   
 
   $scope.savePost = function(text){
@@ -36,6 +35,7 @@ angular.module('starter.controllers', [])
         success : function(list){
             //list is an array of CloudObject. 
             $scope.posts = list;
+
             $scope.$digest();
         }, error : function(error){
            var myPopup = $ionicPopup.show({
@@ -46,7 +46,8 @@ angular.module('starter.controllers', [])
             ]
           });
         }
-      });
+      });     
+
   }
 
 })

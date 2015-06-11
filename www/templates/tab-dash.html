@@ -2,21 +2,29 @@
   <ion-content class="padding">
   
     <form ng-submit="savePost(postText)">
-      <label class="item item-input">
-        <i class="icon ion-ios-arrow-forward placeholder-icon"></i>
-        <input type="text" placeholder="Your Post" ng-model="postText">
-        <button type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/> 
-      </label>
-    </form>
+      
+        <div class=" input-div flex-general-row-wrapper">
+          <div style="margin-top:6.3px;">
+            <i class="icon ion-ios-arrow-forward placeholder-icon flex-equal-ratio-items"></i>
+          </div> 
+          
+          <input  class="postInput" type="text" placeholder="Your Post" ng-model="postText">
+          <button class="postBtn" type="submit"/>
+
+        </div>
+         
     
+    </form>
+   
     <div class="list card" ng-repeat="post in posts">
       <div class="item item-divider">{{post.createdAt}}</div>
       <div class="item item-body">
-        <div>
+        <div id="check">
           {{post.get('text')}}
         </div>
       </div>
-    </div>
+    </div> 
+
     
   </ion-content>
 </ion-view>
