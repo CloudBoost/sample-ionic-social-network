@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope,$rootScope) { 
+.controller('DashCtrl', function($scope,$rootScope, $ionicPopup) { 
   
 
   $scope.savePost = function(text){
